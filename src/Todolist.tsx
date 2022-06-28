@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 type TaskType = {
     id: number
     title: string
@@ -10,11 +11,10 @@ type PropsType = {
     title: string
     tasks: Array<TaskType>
     removeTask: (id: number) => void
-    // changeTasksFilter: (buttonName: string) => void
 }
 
-export function Todolist(props: PropsType) {
 
+export function Todolist(props: PropsType) {
 
     const [filterValue, setFilterValue] = useState('All');
 

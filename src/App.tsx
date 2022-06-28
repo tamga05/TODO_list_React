@@ -20,32 +20,12 @@ function App() {
     };
 
 
-    // const [filterValue, setFilterValue] = useState('All');
-    //
-    //
-    // let filteredTasks = tasks; // Типа записано значение 'All'
-    //
-    // if (filterValue === 'Active') {
-    //     filteredTasks = tasks.filter(el => el.isDone);
-    // }
-    //
-    // if (filterValue === 'Completed') {
-    //     filteredTasks = tasks.filter(el => !el.isDone);
-    // }
-    //
-    //
-    // const changeTasksFilter = (buttonName: string) => {
-    //     setFilterValue(buttonName);
-    //
-    // };
-
     return (
         <div className="App">
             <Todolist
                 title="What to learn"
                 tasks={tasks}
                 removeTask={removeTask}
-                // changeTasksFilter={changeTasksFilter}
             />
         </div>
 
